@@ -1,12 +1,17 @@
 import Link from "next/link";
+import Buttons from "./buttons";
 
 export default function StudentInfo() {
   return (
-    <nav>
-      <h1>Frank Bosse</h1>
-      <Link href="https://github.com/FrankBosse/cprg306-assignments">
-        My GitHub
-      </Link>
-    </nav>
+    <div>
+      <h1 className="text-xl m-3 font-semibold">Frank Bosse</h1>
+      <div className="flex flex-row flex-wrap justify-start ">
+        <Buttons
+          link="https://github.com/FrankBosse/cprg306-assignments"
+          name="My GitHub"
+        />
+        <Buttons link="/" name="Return" />
+      </div>
+    </div>
   );
 }
