@@ -4,6 +4,8 @@ import PostLinkComp from "./postLinkComp";
 import Week2 from "./week-2/page";
 import Week3 from "./week-3/page";
 import Week4 from "./week-4/page";
+import Week5 from "./week-5/page";
+import Week6 from "./week-6/page";
 
 function PostComp({ name, tag, description, link, date, assginmentPage }) {
   return (
@@ -71,6 +73,22 @@ export default function AllPosts() {
         link="/week-4"
         date="2024-02-01"
         assginmentPage={<Week4 />}
+      />
+      <PostComp
+        name="Frank Bosse"
+        tag="frankjbosse"
+        description="This is my week5 assignment for CPRG306"
+        link="/week-5"
+        date="2024-02-01"
+        assginmentPage={<Week5 />}
+      />
+      <PostComp
+        name="Frank Bosse"
+        tag="frankjbosse"
+        description="This is my week6 assignment for CPRG306"
+        link="/week-6"
+        date="2024-02-01"
+        assginmentPage={<Week6 />}
       />
     </div>
   );

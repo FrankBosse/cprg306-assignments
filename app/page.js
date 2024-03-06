@@ -22,7 +22,7 @@ export default function Profile() {
       <HeaderComp
         Name="Frank Bosse"
         Tag="frankjbosse"
-        Description="I'm a Software Developer at SAIT. My posts will display all my assignments for my Web Development class - CPRG306. "
+        Description="I'm a Software Developer student at SAIT. My posts will display all my assignments for my Web Development class - CPRG306. "
         Location="Calgary, Canada"
         Joined="Joined Febuary 2024"
       />
