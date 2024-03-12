@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-export default function NewItem() {
+export default function NewItem({ onAddItem }) {
   const [name, setName] = useState("");
 
   const [quantity, setQuantity] = useState(1);
@@ -14,12 +14,13 @@ export default function NewItem() {
     event.preventDefault();
 
     const item = {
+      id: Math.random().toString().substring(2, 16),
       name,
       quantity,
       category,
     };
     console.log(item);
-    alert(JSON.stringify(item));
+    onAddItem(item);
 
     setName("");
     setQuantity(1);
