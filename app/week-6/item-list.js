@@ -15,10 +15,10 @@ export default function ItemList({ items }) {
 
   return (
     <ul className="flex flex-col">
-      <button btn btn-primary onClick={() => setSortBy("name")}>
+      <button className="btn btn-primary" onClick={() => setSortBy("name")}>
         Name
       </button>
-      <button btn btn-primary onClick={() => setSortBy("category")}>
+      <button className="btn btn-primary" onClick={() => setSortBy("category")}>
         Category
       </button>
       {itemsList.map((item) => (
