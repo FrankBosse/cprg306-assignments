@@ -22,7 +22,7 @@ export default function ItemList({ items }) {
         Category
       </button>
       {itemsList.map((item) => (
-        <li>
+        <li key={item.id}>
           <Item {...item} />
         </li>
       ))}
